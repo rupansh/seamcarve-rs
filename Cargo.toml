@@ -1,0 +1,16 @@
+[package]
+name = "seamcarve"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.24"
+rayon = "1.5"
+packed_simd = { version = "0.3.8", package = "packed_simd_2" }
+convolve2d = "0.1.0"
+
+[[bin]]
+name = "quick_test"
+path = "src/bin.rs"
